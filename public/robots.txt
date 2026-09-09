@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akashpatrot-dynamic.vercel.app/sitemap.xml
