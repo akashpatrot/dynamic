@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { haptic } from "../hooks/useHaptics.js";
+import welcomePoster from "../assets/site/welcome-poster.jpg";
 
 // Dynamic, like the gallery — if welcome.mp4 (or any video) is deleted, this
 // simply finds none instead of crashing the build/dev server.
@@ -73,6 +74,7 @@ export default function Welcome({ onEnter }) {
         muted
         playsInline
         preload="auto"
+        poster={welcomePoster}
         aria-hidden="true"
       >
         <source src={welcomeVideoSrc} type="video/mp4" />
